@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio con Funciones en Javascript</title>
+</head>
+<body>
+
+<script>
+/*Escribir una función que se llame todosMayores que toma como parámetros una lista y un elemento y devuelve si el elemento es menor a todos los elementos de la lista.
+
+todosMayores([66, 101], 21) devuelve true
+todosMayores([107, 14, 125], 55) devuelve false
+todosMayores([107, 14, 125], 150) devuelve false
+*/
+
+
+function todosMayores(lista,elemento) {
+	var resultado = true;
+
+//Hecho con funcion while.
+/*	var i = 0
+	while(i<lista.length){
+		if (lista[i]<elemento) {
+			return false
+		}
+		i++;
+	}
+	return resultado
+}
+	
+
+//Hecho con funcion for.
+/*	for (var i = 0; i < lista.length; i++) 
+		if (lista[i] < elemento) {
+			return false;
+		}
+	return resultado;
+	}
+*/	
+document.write(todosMayores([66, 101], 21));
+document.write("<br>")
+document.write(todosMayores([107, 14, 125], 55));
+document.write("<br>");
+document.write(todosMayores([107, 14, 125], 150));
+
+</script>
+
+
+
+</body>
+</html>
